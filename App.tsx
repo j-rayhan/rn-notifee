@@ -27,6 +27,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Content from './src/content';
 
 const styles = StyleSheet.create({
   container: {
@@ -55,6 +56,7 @@ function App(): React.JSX.Element {
       <Text style={styles.instructions}>
         Notifee Version: {notifee.SDK_VERSION}
       </Text>
+      <Content />
     </View>
   );
 }
