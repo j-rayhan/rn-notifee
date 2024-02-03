@@ -4,7 +4,10 @@
  *
  * @format
  */
-
+import notifee, {
+  EventType,
+  IOSAuthorizationStatus,
+} from '@notifee/react-native';
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
@@ -45,15 +48,13 @@ const styles = StyleSheet.create({
 });
 
 function App(): React.JSX.Element {
-
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>Notifee Demo</Text>
+      <Text style={styles.instructions}>To get started, edit content.tsx</Text>
       <Text style={styles.instructions}>
-        To get started, edit content.tsx
+        Notifee Version: {notifee.SDK_VERSION}
       </Text>
-      <Text style={styles.instructions}>Notifee Version</Text>
-      {/* <Text style={styles.instructions}>{notifee.SDK_VERSION}</Text> */}
     </View>
   );
 }
