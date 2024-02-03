@@ -11,6 +11,7 @@ import notifee, {
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  AppRegistry,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -60,5 +61,15 @@ function App(): React.JSX.Element {
     </View>
   );
 }
+
+function FullScreenMainComponent(): any {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.instructions}>FullScreen Main Component</Text>
+    </View>
+  );
+}
+
+AppRegistry.registerComponent('custom', () => FullScreenMainComponent);
 
 export default App;

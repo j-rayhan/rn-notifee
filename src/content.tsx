@@ -12,7 +12,7 @@ type Props = {};
 
 const Content: React.FC<Props> = () => {
   /* Change the notification payload */
-  const notification = notifications.basic;
+  const notification = notifications.fullScreen;
 
   /* Change the trigger type */
   const triggerType = triggers.timestamp;
